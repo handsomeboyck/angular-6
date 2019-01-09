@@ -1,0 +1,12 @@
+<p>
+  vip works!
+</p>
+<i class="anticon anticon-step-backward"></i>
+<nz-tabset>
+  <nz-tab *ngFor="let tab of tabs" [nzTitle]="titleTemplate">
+    <ng-template #titleTemplate>
+      <i [ngClass]="tab.icon"></i>{{ tab.name }}
+    </ng-template>
+    {{ tab.name }}
+  </nz-tab>
+</nz-tabset>
